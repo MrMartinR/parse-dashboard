@@ -18,7 +18,6 @@ import SidebarSubItem from 'components/Sidebar/SidebarSubItem.react';
 import styles         from 'components/Sidebar/Sidebar.scss';
 import { CurrentApp } from 'context/currentApp';
 
-
 const Sidebar = ({
   prefix,
   action,
@@ -180,7 +179,7 @@ const Sidebar = ({
       <SidebarHeader isCollapsed={!appsMenuOpen && collapsed} />
       {sidebarContent}
       <div className={styles.footer}>
-         <FooterMenu isCollapsed={!appsMenuOpen && collapsed} />
+        <FooterMenu isCollapsed={!appsMenuOpen && collapsed} />
       </div>
     </div>
   );
