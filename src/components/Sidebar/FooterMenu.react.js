@@ -26,7 +26,7 @@ export default class FooterMenu extends React.Component {
 
   toggle() {
     let pos = Position.inWindow(this.moreRef.current);
-    pos.x += 95;
+    pos.x += 24;
     this.setState({
       show: true,
       position: pos
@@ -50,7 +50,7 @@ export default class FooterMenu extends React.Component {
           position={this.state.position}
           onExternalClick={() => this.setState({ show: false })}>
           <div className={styles.popup}>
-            <a href={`${mountPath}logout`}>➡️ Log out</a>
+            <a href={`${mountPath}logout`}>Log Out</a>
           </div>
         </Popover>
       );
